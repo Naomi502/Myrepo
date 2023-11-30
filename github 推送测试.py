@@ -8,7 +8,7 @@ def push_to_remote():
 
     # 执行 Git 操作
     os.system("git add .")
-    os.system("git commit -m '自动化提交'")
+    os.system("git commit -m '本次自动化提交成功code34'")
     os.system("git push")
 
     print("本地代码成功推送到远程仓库。")
