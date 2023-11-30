@@ -2,6 +2,7 @@ a = 5
 def BOOM():
     while a < 10:
         print("循环中")
+        print(a)
         a + 1
 
 BOOM()
@@ -12,7 +13,7 @@ age = 20
 # message = "my name is {0},age is {1}"
 message = "my name is {name},age is {age}"
 
-print(message.format_map({'name': name, 'age': age})
+print(message.format_map({'name': name, 'age': age}))
 
 t = float(input('请输入华氏温度'))  # 输入变量（华氏温度:浮点）
 s = (t - 32) / 1.8  # 计算表达式
@@ -117,7 +118,7 @@ dict1()
 for a in range(1,101):
     if a % 7 == 0 or a % 10 == 7 or a // 10 == 7:
         continue
-    else:，
+    else:
         print(a)
 x = [1,'a','b']
 x.extend('abc')
