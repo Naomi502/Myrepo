@@ -201,7 +201,7 @@ def loginpage():
 
 
 # 在程序启动时加载用户信息，调用loadfile函数
-user_information = loadfile('C:\\Users\\Administrator\\Desktop\\user_information.txt')
+user_information = loadfile('C:\\Users\\User\\Desktop\\user_information.txt)
 
 # 开始
 loginpage()
