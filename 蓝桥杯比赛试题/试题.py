@@ -43,25 +43,20 @@
 #         result = i
 # print(result)
 
-# x = int(input("输入一行包含一个整数:"))
-# c = []
-# result = x
-# over = True  # 添加循环条件
-#
-# while over:
-#     if result >= 10:
-#         out = 1
-#         for char in str(result):  # 遍历添加数字到列表内
-#             num = int(char)
-#             if num != 0:
-#                 out *= num
-#                 c.append(num)
-#         print(c)
-#         print("乘积结果:", out)
-#         result = out
-#         c = []
-#     else:
-#         over = False  # 结束循环
+x = int(input("输入一行包含一个整数:"))
+c = []
+result = x
+
+while result >= 10:
+        out = 1
+        for char in str(result):  # 遍历添加数字到列表内
+            num = int(char)
+            if num != 0:
+                out *= num
+                c.append(num)
+        print(out)
+        result = out
+        c = []
 
 # def count_divisors(number):
 #     count = 0
@@ -92,46 +87,46 @@
 # print(f"约数个数最多的数是：{max_divisors_number}，约数个数为：{max_divisors}")
 
 # Define the matrix
-matrix = [
-    [0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,1,0,1,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1],
-    [0,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,0,1,1,1,1,0,0,0,0,1,0,1,0,1,0,1,0,0,1,1,1,1,1,1],
-    [1,0,0,0,0,1,0,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0],
-    [0,1,1,0,1,0,1,0,1,0,1,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,1,0,0],
-    [0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,0,1,1,0,0,0,1,0,1,0,1,0,0,1,1],
-    [0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,1,1],
-    [0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0]
-]
-
-# Function to spread the "2" in the matrix
-def spread(matrix):
-    # Copy the matrix to avoid modifying the original
-    new_matrix = [row[:] for row in matrix]
-    rows = len(matrix)
-    cols = len(matrix[0])
-    changed = False
-
-    for r in range(rows):
-        for c in range(cols):
-            # Check if the current element is 2
-            if matrix[r][c] == 2:
-                # Spread to adjacent cells
-                for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
-                    new_r, new_c = r + dr, c + dc
-                    if 0 <= new_r < rows and 0 <= new_c < cols and matrix[new_r][new_c] == 0:
-                        new_matrix[new_r][new_c] = 2
-                        changed = True
-
-    return new_matrix, changed
-
-# Start the spread from the top-left corner
-matrix[0][0] = 2
-
-# Keep spreading until no more changes
-while True:
-    matrix, changed = spread(matrix)
-    if not changed:
-        break
-
-# Count the number of 2's in the final matrix
-num_twos = sum(row.count(2) for row in matrix)
-print(num_twos)
+# matrix = [
+#     [0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,1,0,1,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1],
+#     [0,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,0,1,1,1,1,0,0,0,0,1,0,1,0,1,0,1,0,0,1,1,1,1,1,1],
+#     [1,0,0,0,0,1,0,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0],
+#     [0,1,1,0,1,0,1,0,1,0,1,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,1,0,0],
+#     [0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,0,1,1,0,0,0,1,0,1,0,1,0,0,1,1],
+#     [0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,1,1],
+#     [0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0]
+# ]
+#
+# # Function to spread the "2" in the matrix
+# def spread(matrix):
+#     # Copy the matrix to avoid modifying the original
+#     new_matrix = [row[:] for row in matrix]
+#     rows = len(matrix)
+#     cols = len(matrix[0])
+#     changed = False
+#
+#     for r in range(rows):
+#         for c in range(cols):
+#             # Check if the current element is 2
+#             if matrix[r][c] == 2:
+#                 # Spread to adjacent cells
+#                 for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+#                     new_r, new_c = r + dr, c + dc
+#                     if 0 <= new_r < rows and 0 <= new_c < cols and matrix[new_r][new_c] == 0:
+#                         new_matrix[new_r][new_c] = 2
+#                         changed = True
+#
+#     return new_matrix, changed
+#
+# # Start the spread from the top-left corner
+# matrix[0][0] = 2
+#
+# # Keep spreading until no more changes
+# while True:
+#     matrix, changed = spread(matrix)
+#     if not changed:
+#         break
+#
+# # Count the number of 2's in the final matrix
+# num_twos = sum(row.count(2) for row in matrix)
+# print(num_twos)
