@@ -45,7 +45,7 @@ def savefile(information, file_path):
 
 
 # 注册页面
-user_information = loadfile('C:\\Users\\User\\Desktop\\user_information.txt')
+user_information = loadfile('C:\\Users\\Administrator\\Desktop\\user_information.txt')
 
 
 def denglu():
@@ -67,6 +67,10 @@ def denglu():
 
     while True:
         event, values = window.read()
+        if event in '退出':
+            window.close()
+            savefile(user_information, 'C:\\Users\\Administrator\\Desktop\\user_information.txt')
+            sys.exit('程序正常退出')
         if event in '登陆':
             print('收到用户名', values[0])
             print('收到密码', values[1])
@@ -80,6 +84,11 @@ def denglu():
                     print("欢迎您", values[0])
                     window.close()
                     window = sg.Window('小程序工具包——主页面', layout2)
+                    while True:
+                        event, values = window.read()
+                        if event in '登出':
+                            window.close()
+                            denglu()
                 else:
                     print("密码错误")
         if event in '注册':
@@ -97,7 +106,7 @@ def denglu():
                     print("注册成功")
                 if event in '退出注册':
                     window.close()
-                    window = sg.Window('小程序工具包——登陆', layout1)
+                    denglu()
 
 
 denglu()
