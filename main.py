@@ -155,10 +155,31 @@
 # print(a)
 # b = 2**2023%1000
 # print(b)
+#
+# try:
+#     a = [1,2,3]
+#     b = 0
+#     print(a[3])
+# except Exception as e:
+#     print(e)
 
-try:
-    a = [1,2,3]
-    b = 0
-    print(a[3])
-except Exception as e:
-    print(e)
+# year = eval(input())
+# if (year%4)==0 and (year%100)!=0 or year%400==0:
+#     print("是闰年")
+# else:
+#     print("不是闰年")
+n = int(input("请输入一个正整数n: "))
+while n <= 0:
+    n = int(input("请输入一个大于0的正整数: "))
+
+next_number = n + 1
+while True:
+    prime = True
+    for i in range(2, int(next_number**0.5) + 1):
+        if next_number % i == 0:
+            prime = False
+            break
+    if prime:
+        print(f"大于{n}的最小素数是: {next_number}")
+        break
+    next_number += 1

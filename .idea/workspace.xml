@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dd27ac9-fbe2-4598-9552-dbe8cb2be89e" name="更改" comment="更新蓝桥杯试题">
+      <change beforePath="$PROJECT_DIR$/.idea/Myrepo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myrepo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题/试题E 填充.py" beforeDir="false" afterPath="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题/试题E 填充.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/课题作业/课题测试2.py" beforeDir="false" afterPath="$PROJECT_DIR$/课题作业/课题测试2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
