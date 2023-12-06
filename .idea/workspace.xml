@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4dd27ac9-fbe2-4598-9552-dbe8cb2be89e" name="更改" comment="更新蓝桥杯试题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题/试题E 填充.py" beforeDir="false" afterPath="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题/试题E 填充.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/课题作业/课题测试2.py" beforeDir="false" afterPath="$PROJECT_DIR$/课题作业/课题测试2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +116,7 @@
       <workItem from="1701323493017" duration="3415000" />
       <workItem from="1701777824022" duration="48000" />
       <workItem from="1701778050459" duration="696000" />
+      <workItem from="1701842429972" duration="4400000" />
     </task>
     <task id="LOCAL-00001" summary="同步本地代码库">
       <option name="closed" value="true" />
@@ -211,10 +214,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Myrepo$F_.coverage" NAME="试题F 棋盘 覆盖结果" MODIFIED="1701685771106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
-    <SUITE FILE_PATH="coverage/Myrepo$B_.coverage" NAME="试题B 分糖果 覆盖结果" MODIFIED="1701683940148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
+    <SUITE FILE_PATH="coverage/Myrepo$B_.coverage" NAME="试题B 分糖果 覆盖结果" MODIFIED="1701850535198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
     <SUITE FILE_PATH="coverage/Myrepo$A_.coverage" NAME="试题A 求和 覆盖结果" MODIFIED="1701682866715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
     <SUITE FILE_PATH="coverage/Myrepo$G_.coverage" NAME="试题G 翻转 覆盖结果" MODIFIED="1701685712331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
     <SUITE FILE_PATH="coverage/Myrepo$Github_.coverage" NAME="Github 推送测试 覆盖结果" MODIFIED="1701324374008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Myrepo$main.coverage" NAME="main 覆盖结果" MODIFIED="1701850804743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Myrepo$2.coverage" NAME="课题测试2 覆盖结果" MODIFIED="1701324181815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Myrepo$github_.coverage" NAME="github 推送测试 覆盖结果" MODIFIED="1701324341637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Myrepo$C_.coverage" NAME="试题C 三国游戏 覆盖结果" MODIFIED="1701685077013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />

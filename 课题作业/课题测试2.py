@@ -12,11 +12,7 @@ def find_max():
 
 # 2、输出200到500之间，可被6整除，但不是5倍数的所有数，输出时按逗号分隔。
 
-def find_special_numbers():
-    # 输出200到500之间，可被6整除，但不是5倍数的所有数
-    result = [str(num) for num in range(200, 501) if num % 6 == 0 and num % 5 != 0]
-    print(','.join(result))
-
+:wq
 
 # 3、输入一行字符串，分别统计出其中英文字母、空格、数字和其它字符的个数。
 

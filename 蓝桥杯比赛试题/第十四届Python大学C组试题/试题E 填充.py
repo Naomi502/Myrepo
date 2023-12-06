@@ -27,3 +27,6 @@ s = input()  # 从输入中获取字符串 s
 # 调用函数并输出结果
 result = max_non_overlapping_substrings(s)  # 调用 max_non_overlapping_substrings 函数计算结果
 print(result)  # 输出结果
+
+for i in range(3,-1,-1)
+    print(x[i],end=" ")
