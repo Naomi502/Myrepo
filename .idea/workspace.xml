@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dd27ac9-fbe2-4598-9552-dbe8cb2be89e" name="更改" comment="课程更新代码">
-      <change afterPath="$PROJECT_DIR$/课题作业/file编辑.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/小程序项目/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/小程序项目/谷歌翻译.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Myrepo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myrepo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/小程序项目/wifi.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,25 +60,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/GitHub/transformers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;通义灵码&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/User/Documents/GitHub/transformers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\GitHub\Myrepo\作业" />
       <recent name="C:\Users\User\Documents\GitHub\Myrepo\小程序项目" />
+      <recent name="C:\Users\User\Documents\GitHub\Myrepo\作业" />
       <recent name="C:\Users\User\Documents\GitHub\Myrepo\蓝桥杯比赛试题\第十四届Python大学C组试题" />
     </key>
   </component>
@@ -124,6 +128,7 @@
       <workItem from="1702812969908" duration="313000" />
       <workItem from="1703749003804" duration="3596000" />
       <workItem from="1703753680283" duration="631000" />
+      <workItem from="1703829731350" duration="11378000" />
     </task>
     <task id="LOCAL-00001" summary="同步本地代码库">
       <option name="closed" value="true" />
@@ -240,17 +245,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="课程更新代码" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Myrepo$F_.coverage" NAME="试题F 棋盘 覆盖结果" MODIFIED="1701685771106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
-    <SUITE FILE_PATH="coverage/Myrepo$file.coverage" NAME="file编辑 覆盖结果" MODIFIED="1703752255485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/课题作业" />
     <SUITE FILE_PATH="coverage/Myrepo$B_.coverage" NAME="试题B 分糖果 覆盖结果" MODIFIED="1703750190132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
     <SUITE FILE_PATH="coverage/Myrepo$A_.coverage" NAME="试题A 求和 覆盖结果" MODIFIED="1701682866715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
-    <SUITE FILE_PATH="coverage/Myrepo$G_.coverage" NAME="试题G 翻转 覆盖结果" MODIFIED="1701685712331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
     <SUITE FILE_PATH="coverage/Myrepo$Catgpt.coverage" NAME="Catgpt 覆盖结果" MODIFIED="1702567227079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/生产式对话AI" />
+    <SUITE FILE_PATH="coverage/Myrepo$1.coverage" NAME="1 覆盖结果" MODIFIED="1703840795027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小程序项目" />
     <SUITE FILE_PATH="coverage/Myrepo$Github_.coverage" NAME="Github 推送测试 覆盖结果" MODIFIED="1701324374008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Myrepo$main.coverage" NAME="main 覆盖结果" MODIFIED="1701851235130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Myrepo$2.coverage" NAME="课题测试2 覆盖结果" MODIFIED="1701324181815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Myrepo$github_.coverage" NAME="github 推送测试 覆盖结果" MODIFIED="1701324341637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Myrepo$wifi.coverage" NAME="wifi破解 覆盖结果" MODIFIED="1703752134751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/课题作业" />
+    <SUITE FILE_PATH="coverage/Myrepo$F_.coverage" NAME="试题F 棋盘 覆盖结果" MODIFIED="1701685771106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
+    <SUITE FILE_PATH="coverage/Myrepo$file.coverage" NAME="file编辑 覆盖结果" MODIFIED="1703752255485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/课题作业" />
+    <SUITE FILE_PATH="coverage/Myrepo$new.coverage" NAME="new 覆盖结果" MODIFIED="1703839998623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小程序项目" />
+    <SUITE FILE_PATH="coverage/Myrepo$.coverage" NAME="谷歌翻译 覆盖结果" MODIFIED="1703842176692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/小程序项目" />
+    <SUITE FILE_PATH="coverage/Myrepo$G_.coverage" NAME="试题G 翻转 覆盖结果" MODIFIED="1701685712331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
+    <SUITE FILE_PATH="coverage/Myrepo$main.coverage" NAME="main 覆盖结果" MODIFIED="1701851235130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Myrepo$C_.coverage" NAME="试题C 三国游戏 覆盖结果" MODIFIED="1701685077013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/蓝桥杯比赛试题/第十四届Python大学C组试题" />
   </component>
 </project>

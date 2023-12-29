@@ -1,0 +1,11 @@
+{
+  "code": 200,
+  "data": {
+    "source_lang": "zh-CN",
+    "target_lang": "en",
+    "translate_result": "Hello"
+  },
+  "processTime": "221.80ms",
+  "time": "2023-12-29 17:00:36",
+  "url": "https://findmyip.net/"
+}
