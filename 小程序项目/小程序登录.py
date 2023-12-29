@@ -13,11 +13,12 @@ def loadfile(file_path):
         with open(file_path, 'r') as file:
             for line in file:
                 # 解析文件中的每一行，将信息添加到字典中
-                parts = line.strip().split(', ')
-                username = parts[0].split(': ')[1]
-                password = parts[1].split(': ')[1]
-                login_count = int(parts[2].split(': ')[1])
-                registration_time_str = parts[3].split(': ')[1]
+                parts = line.strip().split(', ')  # 使用逗号和空格分割每一行的字符串
+                username = parts[0].split(': ')[1]  # 获取分割后的第一个元素中冒号后面的内容，即用户名
+                password = parts[1].split(': ')[1]  # 获取分割后的第二个元素中冒号后面的内容，即密码
+                login_count = int(parts[2].split(': ')[1])  # 获取分割后的第三个元素中冒号后面的内容，将其转换为整数，即登录次数
+                registration_time_str = parts[3].split(': ')[1]  # 获取分割后的第四个元素中冒号后面的内容，即注册时间字符串
+
 
                 # 将字符串时间转换为datetime对象
                 registration_time = datetime.datetime.strptime(registration_time_str, '%Y-%m-%d %H:%M:%S.%f')
