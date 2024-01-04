@@ -41,5 +41,37 @@
       "translate_result": "Liu Jiaqi gay"
     },
     "processTime": "929.31ms"
+  },
+  "6": {
+    "data": {
+      "source_lang": "zh-CN",
+      "target_lang": "en",
+      "translate_result": "Hello"
+    },
+    "processTime": "240.27ms"
+  },
+  "7": {
+    "data": {
+      "source_lang": "zh-CN",
+      "target_lang": "en",
+      "translate_result": "This is Google"
+    },
+    "processTime": "468.15ms"
+  },
+  "8": {
+    "data": {
+      "source_lang": "en",
+      "target_lang": "zh-CN",
+      "translate_result": "Python"
+    },
+    "processTime": "258.28ms"
+  },
+  "9": {
+    "data": {
+      "source_lang": "zh-CN",
+      "target_lang": "en",
+      "translate_result": "I want to kill Liu Jiaqi"
+    },
+    "processTime": "980.87ms"
   }
 }
