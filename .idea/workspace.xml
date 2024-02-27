@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dd27ac9-fbe2-4598-9552-dbe8cb2be89e" name="更改" comment="课程更新代码">
-      <change afterPath="$PROJECT_DIR$/实训/demo1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/实训/heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Myrepo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myrepo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/实训/demo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/实训/demo1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +76,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Myrepo\实训" />
       <recent name="C:\Users\User\Documents\GitHub\Myrepo\小程序项目" />
       <recent name="C:\Users\User\Documents\GitHub\Myrepo\作业" />
       <recent name="C:\Users\User\Documents\GitHub\Myrepo\蓝桥杯比赛试题\第十四届Python大学C组试题" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.谷歌翻译">
+  <component name="RunManager">
     <configuration name="谷歌翻译" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Myrepo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701851113403</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="课程更新代码">
+      <created>1708994440457</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708994440457</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
