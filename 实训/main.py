@@ -9,6 +9,13 @@ import requests
 from bs4 import BeautifulSoup
 from tkinter import ttk
 
+'''
+pip install bs4
+pip install requests
+pip install jieba
+pip install wordcloud
+'''
+
 def open_file():
     filename = filedialog.askopenfilename()
     if filename:
@@ -18,7 +25,7 @@ def open_file():
                 text1.insert('end', line)
 
 
-def open_word():
+def open_wordcloud():
     # 获取文本框1中的内容
     text = text1.get("1.0", "end-1c")
     # 使用结巴分词提取关键词
@@ -34,7 +41,7 @@ def open_word():
     wordcloud.recolor(color_func=image_colors).to_file(tmp_file.name)
     # 打开词云图像并显示在文本框2中
     img = Image.open(tmp_file.name)
-    img = img.resize((400, 400))
+    img = img.resize((300, 300))
     photo = ImageTk.PhotoImage(img)
     text2.delete("1.0", "end")
     text2.image_create(tkinter.END, image=photo)
@@ -42,11 +49,7 @@ def open_word():
 
 
 def show_info():
-    messagebox.showinfo("软件信息", "这是一个词云生成器软件，用于从文本生成词云图像。")
-
-def exit_app():
-    root.destroy()
-
+    messagebox.showinfo("软件信息", "这是一个词云生成器软件，用于从文本生成词云图像。\n顾珩 230404106")
 
 def web_crawl():
     # 获取用户输入的网址
@@ -64,10 +67,24 @@ def web_crawl():
     text1.delete('1.0', 'end')
     text1.insert('1.0', text)
 
+def data_fenxi():
+    text = text1.get("1.0", "end-1c")
+    words = jieba.lcut(text)
+    word_freq = {}
+    for word in words:
+        if len(word) > 1:  # 只统计长度大于1的词语
+            word_freq[word] = word_freq.get(word, 0) + 1
+    sorted_word_freq = sorted(word_freq.items(), key=lambda x: x[1], reverse=True)
+    result_text = ""
+    for word, freq in sorted_word_freq:
+        result_text += f"{word}: {freq}\n"
+    text2.delete("1.0", "end")
+    text2.insert("end", result_text)
+
 
 root = tkinter.Tk()
-root.title('词云生成器')
-root.geometry('800x600+300+100')
+root.title('文章分析生成器')
+root.geometry('700x400+300+100')
 
 # 设置主题样式
 style = ttk.Style()
@@ -86,37 +103,45 @@ style.map('TButton', background=[('active', '#DDD')])
 frame1 = tkinter.Frame(root, bg='#FFF')
 frame1.pack(pady=10)
 
+# 初始化TEXT控件
 text1 = tkinter.Text(frame1, height=20, width=40, bg='#FFF', fg='#333', bd=2)
 text1.pack(side='left', padx=10)
 
 text2 = tkinter.Text(frame1, height=20, width=40, bg='#FFF', fg='#333', bd=2)
 text2.pack(side='right', padx=10)
 
+# 输入框模块
 url_frame = tkinter.Frame(root, bg='#FFF')
 url_frame.pack(pady=10)
 
 url_label = ttk.Label(url_frame, text="请输入网址：")
 url_label.pack(side='left', padx=10)
 
-url_entry = ttk.Entry(url_frame, width=50)
+website1 = tkinter.StringVar(value='https://www.chinaz.com/2024/0229/1600177.shtml')
+
+url_entry = ttk.Entry(url_frame, width=50,textvariable=website1)
 url_entry.pack(side='left', padx=10)
 
 button_frame = tkinter.Frame(root, bg='#FFF')
 button_frame.pack(pady=10)
 
+# 按钮模块
 open_button = ttk.Button(button_frame, text="打开文件", command=open_file)
 open_button.pack(side='left', padx=10)
-
-word_button = ttk.Button(button_frame, text="生成词云", command=open_word)
-word_button.pack(side='left', padx=10)
 
 crawl_button = ttk.Button(button_frame, text="爬取网页内容", command=web_crawl)
 crawl_button.pack(side='left', padx=10)
 
-info_button = ttk.Button(button_frame, text="关于", command=show_info)
-info_button.pack(side='left', padx=10)
+data_button = ttk.Button(button_frame, text="数据分析", command=data_fenxi)
+data_button.pack(side='left', padx=10)
 
-exit_button = ttk.Button(button_frame, text="退出", command=exit_app)
-exit_button.pack(side='left', padx=10)
+word_button = ttk.Button(button_frame, text="生成词云", command=open_wordcloud)
+word_button.pack(side='left', padx=10)
+
+# 菜单模块
+menubar = tkinter.Menu(root)
+menubar.add_command(label='帮助',command=show_info)
+menubar.add_command(label='退出',command=root.quit)
+root.config(menu=menubar)
 
 root.mainloop()
