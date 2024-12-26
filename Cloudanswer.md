@@ -213,19 +213,58 @@
 
 ---
 
-### 简答题：
-1. **请简述 IaaS、PaaS、SaaS 云计算平台的区别。**
+### 简答题
 
-- **IaaS (基础设施即服务)**：提供虚拟化的计算资源，用户可以按需租用计算、存储和网络资源。如AWS、阿里云提供的弹性计算服务。
-- **PaaS (平台即服务)**：提供开发、测试、部署的环境。用户可以在平台上运行应用，而无需管理底层基础设施。如Google App Engine。
-- **SaaS (软件即服务)**：提供通过互联网访问的软件应用，用户无需关心底层硬件和平台。如Google Docs、Office 365。
+1. **请简述 IaaS、PaaS、SaaS 云计算平台的区别。**  
+   - **IaaS（基础设施即服务）**：提供虚拟化的计算资源，包括虚拟机、存储和网络设备。用户可以按需租用计算资源，例如 AWS EC2。  
+   - **PaaS（平台即服务）**：提供开发和部署应用的平台，用户无需管理底层基础设施，只需专注于应用程序开发，例如 Google App Engine。  
+   - **SaaS（软件即服务）**：直接向用户提供软件服务，用户无需安装和维护软件，例如 Gmail、Salesforce。  
 
-2. **请简述 OpenStack 中的核心组件 Keystone、Nova、Glance、Neutron的功能。**
+2. **请简述 OpenStack 中的核心组件 Keystone、Nova、Glance、Neutron 的功能。**  
+   - **Keystone**：身份认证服务，提供身份验证和授权功能。  
+   - **Nova**：计算服务，负责管理和调度虚拟机。  
+   - **Glance**：镜像服务，提供虚拟机镜像的存储和管理。  
+   - **Neutron**：网络服务，负责管理虚拟网络和 IP 地址分配。  
 
-- **Keystone**：负责身份验证和授权，管理用户、项目、角色等。
-- **Nova**：负责计算资源管理，主要提供虚拟机的创建和管理。
-- **Glance**：负责虚拟机镜像的管理。
-- **Neutron**：提供网络服务，管理虚拟网络、路由等。
+3. **安装与配置 Glance 镜像服务的步骤。**  
+   - 安装 Glance 包：`yum install openstack-glance`  
+   - 配置 Glance 服务，编辑配置文件 `/etc/glance/glance-api.conf` 和 `/etc/glance/glance-registry.conf`。  
+   - 初始化 Glance 数据库：`su -s /bin/sh -c "glance-manage db_sync" glance`  
+   - 启动 Glance 服务：`systemctl enable openstack-glance-api` 和 `systemctl start openstack-glance-api`  
+   - 验证 Glance 服务是否正常运行。  
+
+4. **假设要远程管理 IP 地址为“192.168.20.20”的主机，用户名和密码分别为“user1”“000000”，请写出用 MobaXterm 远程登录的具体操作过程。**  
+   - 打开 MobaXterm。  
+   - 点击 `Session`，选择 `SSH`。  
+   - 在 `Remote host` 中输入 `192.168.20.20`。  
+   - 在 `Specify username` 中输入 `user1`。  
+   - 点击 `OK`，输入密码 `000000`。  
+   - 登录成功后，可以开始远程管理。  
+
+5. **请编辑文件 “abc” ，找到其内容中第一个 "dhcp” 字符串出现的位置，然后将该字符串更改为 "static"，最后保存并退出。**  
+   - 打开文件：`vi abc`  
+   - 进入查找模式：`/dhcp`  
+   - 修改字符串：将光标定位到 `dhcp`，按 `cw`，输入 `static`。  
+   - 保存并退出：`:wq`  
+
+6. **安装与配置 Placement 服务的步骤。**  
+   - 安装 Placement 包：`yum install openstack-placement-api`  
+   - 编辑配置文件 `/etc/placement/placement.conf`。  
+   - 初始化数据库：`placement-manage db sync`  
+   - 启动 Placement 服务：`systemctl enable --now openstack-placement-api`  
+   - 验证服务是否正常运行。  
+
+7. **KeyStone 主要模块的功能介绍。**  
+   - **identity**：提供用户身份认证服务。  
+   - **assignment**：管理用户和项目的角色分配。  
+   - **catalog**：提供服务目录。  
+   - **policy**：管理访问控制策略。  
+
+8. **Nova 主要模块的功能介绍。**  
+   - **nova-api**：处理外部 API 请求。  
+   - **nova-compute**：管理虚拟机的生命周期。  
+   - **nova-scheduler**：调度虚拟机到合适的主机上。  
+   - **nova-conductor**：数据库访问代理，减少直接数据库访问。  
 
 ---
 
